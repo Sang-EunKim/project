@@ -40,8 +40,11 @@ public static void main(String[] args) {
 			e.printStackTrace();
 		}
 		
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 5efb473dabac60e28363e140d6ffd17863161da6
 		Scanner scan = new Scanner(System.in);
 		String input = null;
 		StudentInfo std = new StudentInfo();
