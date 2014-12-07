@@ -6,8 +6,41 @@ import java.util.*;
 public class register {
 
 public static void main(String[] args) {
-
-
+	
+	
+	ArrayList<StudentInfo> stdList = new ArrayList<StudentInfo>();
+	String id;
+	String num;
+	String pw;
+	final int ID=1,NUM=2,PW=3;
+	
+	File aFile = new File("log.txt");
+	FileReader fileReader;
+	try {
+		fileReader = new FileReader(aFile);
+		BufferedReader reader = new BufferedReader(fileReader);
+		
+		String line = null;
+		
+		try {
+			while((line = reader.readLine()) != null){
+				id = line.substring(0, 4);
+				num = line.substring(4,11);
+				pw = line.substring(11,15);
+				StudentInfo std = new StudentInfo(id, num, pw);
+				stdList.add(std);
+			}
+			reader.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
 		Scanner scan = new Scanner(System.in);
 		String input = null;
 		StudentInfo std = new StudentInfo();
