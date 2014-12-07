@@ -26,7 +26,7 @@ public static void main(String[] args) {
 					id = line.substring(0, 4);
 					num = line.substring(4,11);
 					pw = line.substring(11,15);
-					StudentInfo std = new StudentInfo(id,  num, pw);
+					StudentInfo std = new StudentInfo(id, num, pw);
 					stdList.add(std);
 				}
 				reader.close();
@@ -40,11 +40,7 @@ public static void main(String[] args) {
 			e.printStackTrace();
 		}
 		
-<<<<<<< HEAD
 
-
-=======
->>>>>>> 5efb473dabac60e28363e140d6ffd17863161da6
 		Scanner scan = new Scanner(System.in);
 		String input = null;
 		StudentInfo std = new StudentInfo();

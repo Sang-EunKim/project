@@ -34,6 +34,4 @@ public class StudentInfo {
 	public void setStupw(String stupw) {
 		this.stupw = stupw;
 	}
-
-
 }
