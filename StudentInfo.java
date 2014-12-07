@@ -16,6 +16,7 @@ public class StudentInfo {
 		
 	}
 	
+
 	public String getStuId() {
 		return stuId;
 	}
@@ -34,4 +35,6 @@ public class StudentInfo {
 	public void setStupw(String stupw) {
 		this.stupw = stupw;
 	}
+
+
 }
