@@ -9,47 +9,8 @@ public class login{
     public static void main(String[] args){
        // TODO Auto-generated method stub
     	
-    	ArrayList<StudentInfo> stdList = new ArrayList<StudentInfo>();
-		String id;
-		String num;
-		String pw;
-		final int ID=1,NUM=2,PW=3;
-		
-		File aFile = new File("log.txt");
-		FileReader fileReader;
-		try {
-			fileReader = new FileReader(aFile);
-			BufferedReader reader = new BufferedReader(fileReader);
-			
-			String line = null;
-			
-			
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		
-
-		Scanner scan = new Scanner(System.in);
-		String input = null;
-		StudentInfo std = new StudentInfo();
-
-    	do{
-			System.out.println("아이디:");
-			input = scan.nextLine();
-			std.setStuId(input);
-			}
-			while(input.length() != 4 || !dupCheck(input, ID, stdList));
-		
-		
-		do{
-			System.out.println("비밀번호:");
-			input = scan.nextLine();
-			std.setStupw(input);
-			}
-			while(input.length() != 4);
-    }
     
+<<<<<<< HEAD
     
 	public static boolean dupCheck(String target,int flag,ArrayList<StudentInfo> List){
 		//1.id 3.pw
@@ -74,6 +35,9 @@ public class login{
 		}
 		
 		return true;
+=======
+    	
+>>>>>>> e4f1293dea0b9c7400fd6dac51b45b80abb4d5c3
 	}
     
 
