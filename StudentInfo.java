@@ -12,6 +12,7 @@ public class StudentInfo {
 		this.stupw = pw;
 	}
 	
+	
 	public StudentInfo(){
 		
 	}
