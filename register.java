@@ -28,6 +28,7 @@ public static void main(String[] args) {
 					pw = line.substring(11,15);
 					StudentInfo std = new StudentInfo(id,  num, pw);
 					stdList.add(std);
+
 				}
 				reader.close();
 			} catch (IOException e) {
