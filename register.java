@@ -29,6 +29,7 @@ public static void main(String[] args) {
 					pw = line.substring(11,15);
 					StudentInfo std = new StudentInfo(id, num, pw);
 					stdList.add(std);
+
 				}
 				reader.close();
 			} catch (IOException e) {
@@ -41,7 +42,6 @@ public static void main(String[] args) {
 			e.printStackTrace();
 		}
 		
-
 		Scanner scan = new Scanner(System.in);
 		String input = null;
 		StudentInfo std = new StudentInfo();
