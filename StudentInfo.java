@@ -16,7 +16,6 @@ public class StudentInfo {
 		
 	}
 	
-
 	public String getStuId() {
 		return stuId;
 	}
