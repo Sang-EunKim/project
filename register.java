@@ -9,6 +9,7 @@ public static void main(String[] args) {
 		
 		ArrayList<StudentInfo> stdList = new ArrayList<StudentInfo>();
 
+
 		String id;
 		String num;
 		String pw;
