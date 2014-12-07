@@ -8,8 +8,6 @@ public class register {
 public static void main(String[] args) {
 		
 		ArrayList<StudentInfo> stdList = new ArrayList<StudentInfo>();
-
-
 		String id;
 		String num;
 		String pw;
@@ -36,8 +34,7 @@ public static void main(String[] args) {
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
-			}
-			
+			}			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
