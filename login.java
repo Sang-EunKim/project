@@ -52,7 +52,7 @@ public class login{
     
     
 	public static boolean dupCheck(String target,int flag,ArrayList<StudentInfo> List){
-		//1.id 2.num 3.pw
+		//1.id 3.pw
 		switch(flag){
 		case 1:
 			for(int i=0; i < List.size(); i++){
@@ -64,6 +64,8 @@ public class login{
 			if(target.equals(List.get(i).getStuNum()))
 				return false;
 		}*/
+
+
 		case 3:
 			for(int i=0; i < List.size(); i++){
 			if(target.equals(List.get(i).getStupw()))
